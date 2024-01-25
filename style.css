@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* colores primarios */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /* colores neutrales */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%)
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 1440px;
+    margin: auto;
+}
+
+.presentacion {
+    text-align: center;
+}
+
+.presentacion h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.presentacion h1 {
+    color: var(--Very-Dark-Blue);
+}
+
+.presentacion p {
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.arriba,
+.abajo {
+    margin: auto;
+    margin-bottom: -150px;
+}
+
+.izquierda-derecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.arriba,
+.derecha,
+.abajo,
+.izquierda {
+    background-color: #fff;
+    width: 358px;
+    height: 250px;
+    border-radius: 15px;
+    -webkit-box-shadow: 9px 7px 25px 2px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 9px 7px 25px 2px rgba(0, 0, 0, 0.41);
+    box-shadow: 9px 7px 25px 2px rgba(0, 0, 0, 0.41);
+}
+
+.arriba {
+    border-top: 4px solid var(--Red);
+}
+
+.abajo {
+    border-top: 4px solid var(--Orange);
+
+}
+
+.derecha {
+    border-top: 4px solid var(--Blue);
+}
+
+.izquierda {
+    border-top: 4px solid var(--Cyan);
+}
+
+.imagen img {
+    width: 75px;
+    height: 70px;
+}
+
+.imagen {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+
+.arriba,
+.derecha,
+.abajo,
+.izquierda {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    .izquierda-derecha {
+       flex-direction: column;
+    }
+    .arriba, .derecha, .abajo, .izquierda{
+        margin-bottom: 15px;
+    }
+}
