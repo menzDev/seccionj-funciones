@@ -23,11 +23,15 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 main {
     width: 1440px;
     margin: auto;
+    height: 90vh;
 }
 
 .presentacion {
@@ -115,7 +119,10 @@ main {
 }
 
 @media screen and (max-width:768px) {
-
+   body, .main{
+    width: 100%;
+    height: auto;
+   }
     .izquierda-derecha {
        flex-direction: column;
     }
